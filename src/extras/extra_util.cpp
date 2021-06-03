@@ -24,4 +24,5 @@ namespace util {
 		int random = rand();
 		return (random - (random / upto) * upto);
 	}*/
+
 };
