@@ -232,11 +232,12 @@ void print_generation_table(gen_algo::population* new_population, double fittest
 		ss << std::setprecision(5);
 		ss << "      " << ++schedule_number << "       | ";
 		ss << sch.get_fitness() << " | " << std::right << std::setw(9) << std::setfill(' ') << sch.get_number_of_conflicts();
-		ss << " | " << sch << '\n';
+		ss << " | \n                " << sch << '\n';
 		gen_data_to_print.push_back(ss.str());
 		ss.str(std::string());
 	}
 }
+
 
 int driver() {
 	// set the seed

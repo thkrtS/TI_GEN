@@ -37,11 +37,11 @@ namespace entities {
 	}*/
 
 	std::ostream& operator<<(std::ostream& os, const sec_class& other) {
-		return os << ("[ " + other.get_deparatment().get_name() + ", "
+		return os << ("                     [ " + other.get_deparatment().get_name() + ", "
 				+ other.get_course().get_number() + ", "
 				+ other.get_room().get_number() + ", "
 				+ other.get_instructor().get_id() + ", "
-				+ other.get_class_time().get_id() + " ]");
+				+ other.get_class_time().get_id() + " ]\n              ");
 	}
 
 };

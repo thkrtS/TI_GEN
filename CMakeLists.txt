@@ -9,9 +9,11 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(SOURCES
 	src/extras/extra_util.cpp
+	src/extras/exception_util.cpp
 	src/data.cpp
 	src/room.cpp
 	src/course.cpp
+	src/driver.cpp
 	src/schedule.cpp
 	src/sec_class.cpp
 	src/class_time.cpp
